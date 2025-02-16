@@ -6,6 +6,7 @@ from efficientnet_pytorch import EfficientNet
 import numpy as np
 from sklearn.metrics import accuracy_score
 import os
+data_dir = "C:/Users/mehr110/PycharmProjects/Efficient-Memo/dataset/kaggle_data"
 from torch.utils.data import DataLoader, random_split
 
 # Set device
