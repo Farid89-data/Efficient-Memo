@@ -31,12 +31,39 @@ Efficient-Memo is a PyTorch-based deep learning project that uses EfficientNet f
 ### Steps
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/Efficient-Memo.git
+   git clone https://github.com/Farid89-data/Efficient-Memo.git
    cd Efficient-Memo
+2. Create a virtual environment:
 
-Create a virtual environment:
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+3. Install dependencies:
 
-Install dependencies:
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+
+
+## Folder Structure
+
+Below is the expected folder structure for the project:
+```plaintext
+Efficient-Memo/
+├── dataset/
+│   ├── kaggle_data/
+│   │   ├── train/
+│   │   │   ├── class1/
+│   │   │   ├── class2/
+│   │   │   └── ...
+│   │   ├── test/
+│   │   │   ├── class1/
+│   │   │   ├── class2/
+│   │   │   └── ...
+│   │   └── val/ (optional)
+├── main.py
+├── requirements.txt
+└── README.md
+
+
+
+## Usage
