@@ -1,0 +1,5 @@
+torch
+torchvision
+efficientnet-pytorch
+numpy
+scikit-learn
