@@ -43,11 +43,10 @@ Efficient-Memo is a PyTorch-based deep learning project that uses EfficientNet f
    ```bash
    pip install -r requirements.txt
 
-
 ## Folder Structure
 
 Below is the expected folder structure for the project:
-```plaintext
+~~~text
 Efficient-Memo/
 ├── dataset/
 │   ├── kaggle_data/
@@ -63,7 +62,55 @@ Efficient-Memo/
 ├── main.py
 ├── requirements.txt
 └── README.md
-
-
-
+~~~
 ## Usage
+## Dataset Preparation
+
+Ensure your dataset is structured as follows:
+~~~text
+kaggle_data/
+├── train/
+│   ├── ants/
+│   ├── bees/
+│   └── ...
+├── test/
+│   ├── ants/
+│   ├── bees/
+│   └── ...
+~~~
+2. Update Dataset Path
+
+In `main.py`, set the `data_dir` variable to the path of your dataset:
+   ```
+data_dir = "C:/Users/mehr110/PycharmProjects/Efficient-Memo/dataset/aggle_data"
+```
+3. Run the Training Script
+
+Run the script to train the model:
+```
+python main.py
+```
+
+### Model Architecture
+
+Efficient-Memo uses the EfficientNet backbone, with additional layers for incremental learning. The model architecture includes:
+
+    1- Generalized Layers : Pretrained EfficientNet backbone layers.
+    2- Specialized Layers: Custom layers for feature extraction.
+    3- Fully Connected Layer: Final classification layer for the number of classes.
+
+
+ ###   Results
+# Example Output
+
+The training script prints epoch losses and validation accuracy:
+~~~
+Epoch 1/10, Loss: 0.5432, Val Acc: 0.8543
+Epoch 2/10, Loss: 0.4321, Val Acc: 0.9123
+...
+Best Validation Accuracy: 0.9123
+~~~
+
+### License
+
+This project is licensed under the MIT License.
