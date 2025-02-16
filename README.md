@@ -58,7 +58,7 @@ Efficient-Memo/
 │   │   │   ├── class1/
 │   │   │   ├── class2/
 │   │   │   └── ...
-│   │   └── val/ (optional)
+│   │   └── val/ 
 ├── main.py
 ├── requirements.txt
 └── README.md
