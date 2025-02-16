@@ -31,13 +31,13 @@ def main():
 
         # Create datasets for current session
         train_dataset = IncrementalDataset(
-            root_dir='C:/Users/mehr110/PycharmProjects/Efficient-Memo/dataset/kaggle_data/train',
+            root_dir='C:/Users/mehr110/PycharmProjects/Efficient-Memo/dataset/kaggle_data',
             class_range=range(session * classes_per_session, (session + 1) * classes_per_session),
             transform=transform
         )
 
         val_dataset = IncrementalDataset(
-            root_dir='C:/Users/mehr110/PycharmProjects/Efficient-Memo/dataset/kaggle_data/test',
+            root_dir='C:/Users/mehr110/PycharmProjects/Efficient-Memo/dataset/kaggle_data',
             class_range=range(session * classes_per_session, (session + 1) * classes_per_session),
             transform=transform
         )
