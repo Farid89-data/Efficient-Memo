@@ -4,7 +4,7 @@ from model import MemoBase
 from dataset import IncrementalDataset
 from trainer import MemoTrainer
 
-
+#maim
 def main():
     # Set device
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
