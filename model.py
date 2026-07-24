@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from torchvision import models
 
-
+    def __init__(self, backbone_type2='resnet34', num_classes=2):
 class MemoBase(nn.Module):
     def __init__(self, backbone_type='resnet34', num_classes=2):
         super(MemoBase, self).__init__()
