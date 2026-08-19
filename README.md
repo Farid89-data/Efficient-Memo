@@ -7,7 +7,7 @@ Efficient-Memo is a PyTorch-based deep learning project that uses EfficientNet f
 - **EfficientNet Backbone**: Leverages the EfficientNet architecture for feature extraction.
 - **Dataset Handling**: Supports agricultural pest datasets structured using `train`, `val`, and `test` splits.
 - **Customizable**: Easily adjust the model, learning rate, and dataset paths.
-
+.
 ---
 
 ## Table of Contents
