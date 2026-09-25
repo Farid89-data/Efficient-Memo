@@ -2,7 +2,7 @@ from torch.utils.data import Dataset
 from PIL import Image
 import os
 
-
+....
 class IncrementalDataset(Dataset):
     def __init__(self, root_dir, class_range, transform=None):
         self.root_dir = root_dir
